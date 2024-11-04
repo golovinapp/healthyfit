@@ -1,98 +1,183 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Принципы здорового</title>
-    <link rel="stylesheet" href="/fonts/fonts.css"/>
-    <link rel="stylesheet" href="/src/main.css">
+    <link rel="stylesheet" href="/fonts/fonts.css" />
     <script defer src="https://cdn.tailwindcss.com"></script>
-    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/src/main.css">
+    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script defer src="/src/main.js"></script>
 </head>
-<body class="bg-[#FFFAF1] py-[50px] px-[20px]" style="font-family: Waverly">
+
+<body class="bg-[#FFFAF1] " style="font-family: Waverly">
     <!-- <img class="vector-body absolute left-0 top-0 z-[-1]" src="/img/vector.png" alt="vector"> -->
-    <div class="container mx-auto">
-        <img class="mx-auto" src="/img/logo.svg" alt="logo"> 
-        <p  style="font-family: PF Bague Sans Pro" class="mt-[156px] text-[26px] text-center font-light uppercase max-[500px]:mt-[182px]">Курс Кати <span class="ms-[3px]">Чи</span></p>
-        <div class="mx-auto mt-[76px] max-w-[822px] w-full desctop">
-            <img  src="/img/title.png" alt="title">
-        </div>
-        <div class="mx-auto mt-[17px] max-w-[822px] w-full mobile">
-            <img  src="/img/title_mob.png" alt="title">
-        </div>
-        <div class="check max-w-[400px] mx-auto mt-[267px] text-[48px] uppercase font-light leading-tight desctop">
-            Давай проверим — подойдет ли тебе этот материал?
-            <img class="ms-auto me-[20px]" src="/img/vec.svg" alt="vec">
-        </div>
-        <div class="check max-w-[400px] mx-auto mt-[178px] text-[24px] uppercase font-light leading-tight text-center mobile">
-            Давай проверим — подойдет ли тебе этот материал?
-            <img class="ms-auto me-[20px]" src="/img/vec.svg" alt="vec">
-        </div>
-
-
-        <div class="opros">
-            <div class="mt-[250px] text-[38px] font-bold text-center max-[500px]:leading-tight max-[500px]:mt-[150px]">
-                Что думаешь об этих утверждениях?
-            </div>
-            <div class="block-opros mt-[97px] h-[50px] max-[600px]:h-[90px] max-[400px]:h-[120px] max-[400px]:h-[90px] text-center relative mx-auto">
-                <p class="absolute left-0 right-0 justify-center max-w-[800px] mx-auto leading-none text-[38px] max-[400px]:text-[30px] text-center">Cталкиваешься ли ты со стрессом?</p>
-                <p class="absolute left-0 right-0 justify-center max-w-[800px] mx-auto leading-none text-[38px] max-[400px]:text-[30px] text-center hidden">Бывает, что без видимой причины наваливается усталость?</p>
-                <p class="absolute left-0 right-0 justify-center max-w-[800px] mx-auto leading-none text-[38px] max-[400px]:text-[30px] text-center hidden">Случается, что спишь менее семи-восьми часов в сутки?</p>
-                <p class="absolute left-0 right-0 justify-center max-w-[800px] mx-auto leading-none text-[38px] max-[400px]:text-[30px] text-center hidden">Фрустрация или даже депрессия - знакомые состояния?</p>
-                <p class="absolute left-0 right-0 justify-center max-w-[800px] mx-auto leading-none text-[38px] max-[400px]:text-[30px] text-center hidden">Сексуальное влечение понижено?</p>
-                <p class="absolute left-0 right-0 justify-center max-w-[800px] mx-auto leading-none text-[38px] max-[400px]:text-[30px] text-center hidden">Вес легко набирается и тяжело сбрасывается, особенно в области абдомена?</p>
-                <p class="absolute left-0 right-0 justify-center max-w-[800px] mx-auto leading-none text-[38px] max-[400px]:text-[30px] text-center hidden">Следишь за тем, что ешь, стараешься контролировать?</p>
-                <p class="absolute left-0 right-0 justify-center max-w-[800px] mx-auto leading-none text-[38px] max-[400px]:text-[30px] text-center hidden">Память или концентрация стали подводить?</p>
-                <p class="absolute left-0 right-0 justify-center max-w-[800px] mx-auto leading-none text-[38px] max-[400px]:text-[30px] text-center hidden">Чаще ощущаешь дискомфорты в ЖКТ?</p>
-                <p class="absolute left-0 right-0 justify-center max-w-[800px] mx-auto leading-none text-[38px] max-[400px]:text-[30px] text-center hidden">Головные боли от перенапряжения  - знакомо?</p>
-                <p class="absolute left-0 right-0 justify-center max-w-[800px] mx-auto leading-none text-[38px] max-[400px]:text-[30px] text-center hidden">Иммунитет ослаблен и чаще простужаешься?</p>
-            </div>
-            <div>
-                <div class="mx-auto mt-[76px] text-center max-[767px]:flex max-[767px]:flex-col max-[767px]:items-center">
-                    <button class="btn-no border-[#111111] border rounded-full w-[313px] h-[71px] text-[32px] me-[50px] max-[767px]:me-0 mb-[50px] relative z-2">Нет</button>
-                    <button class="btn-yes border-[#111111] border rounded-full w-[313px] h-[71px] text-[32px] relative">Да</button>
+    <!-- <div class="page py-[50px] px-[20px] max-[500px]:pt-[70px]"> -->
+    <div class="page py-[50px] px-[20px] max-[500px]:pt-[0px] max-[500px]:px-[0px] mobile">
+        <div class="container mx-auto">
+            <div class="intro max-[500px]:pt-[70px]">
+                <div class="mx-auto logo">
+                    <img src="/img/logo.svg" alt="logo">
                 </div>
-                <!-- <div class="text-center mt-[100px]">
-                    <button class="text-white btn-dalee border-[#111111] border rounded-full w-[313px] h-[71px] text-[32px] relative">Далее</button>
-                </div> -->
+                <p style="font-family: PF Bague Sans Pro"
+                    class="mt-[156px] text-[26px] text-center font-light uppercase max-[500px]:mt-[182px] max-[500px]:text-[20px]">
+                    Курс Кати <span class="ms-[3px]">Чи</span></p>
+                <div class="mx-auto mt-[76px] max-w-[822px] w-full desctop">
+                    <img src="/img/title.png" alt="title">
+                </div>
+                <div class="mx-auto mt-[17px] max-w-[300px] w-full mobile">
+                    <img src="/img/title_mob.png" alt="title">
+                </div>
+                <div class="check max-w-[400px] mx-auto mt-[267px] text-[48px] uppercase font-light leading-tight desctop">
+                    Давай проверим — подойдет ли тебе этот материал?
+                    <img class="ms-auto me-[20px]" src="/img/vec.svg" alt="vec">
+                </div>
+                <div
+                    class="check max-w-[200px] mx-auto mt-[178px] text-[24px] uppercase font-light leading-tight text-center mobile lh110p">
+                    <p>
+                        Давай проверим —
+                    </p>
+                    <p>
+                        подойдет ли тебе
+                    </p>
+                    <p>
+                        этот материал?
+                    </p>
+                    <img class="ms-auto me-[0px] max-w-[100px]" src="/img/vec.svg" alt="vec">
+                </div>
+    
+                <div class="arrow mt-[37px] mx-auto mobile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="40" viewBox="0 0 26 40" fill="none">
+                        <path d="M0 28.5L11 36V2L14 0V36L26 28.5V31L12.5 40L0 31V28.5Z" fill="black" />
+                    </svg>
+                </div>
+
+                <div class="abs mobile">
+                    <img src="/img/string1_mob.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="opros">
+                <div
+                    class="mt-[250px] text-[38px] font-bold text-center max-[500px]:leading-tight max-[500px]:mt-[150px] max-[500px]:text-[24px] max-[500px]:max-w-[346px] max-[500px]:mx-auto">
+                    Что думаешь об этих утверждениях?
+                </div>
+                <div
+                    class="block-opros mt-[97px] h-[50px] max-[600px]:h-[90px] max-[500px]:h-[120px] max-[500px]:h-[90px] text-center relative mx-auto">
+                    <p
+                        class="absolute left-0 right-0 justify-center max-w-[800px] mx-auto leading-none text-[38px] max-[500px]:max-w-[328px] max-[500px]:mx-auto max-[500px]:text-[24px] text-center">
+                        Cталкиваешься ли ты со стрессом?</p>
+                    <p
+                        class="absolute left-0 right-0 justify-center max-w-[800px] mx-auto leading-none text-[38px] max-[500px]:max-w-[328px] max-[500px]:mx-auto max-[500px]:text-[24px] text-center hidden">
+                        Бывает, что без видимой причины наваливается усталость?</p>
+                    <p
+                        class="absolute left-0 right-0 justify-center max-w-[800px] mx-auto leading-none text-[38px] max-[500px]:max-w-[328px] max-[500px]:mx-auto max-[500px]:text-[24px] text-center hidden">
+                        Случается, что спишь менее семи-восьми часов в сутки?</p>
+                    <p
+                        class="absolute left-0 right-0 justify-center max-w-[800px] mx-auto leading-none text-[38px] max-[500px]:max-w-[328px] max-[500px]:mx-auto max-[500px]:text-[24px] text-center hidden">
+                        Фрустрация или даже депрессия - знакомые состояния?</p>
+                    <p
+                        class="absolute left-0 right-0 justify-center max-w-[800px] mx-auto leading-none text-[38px] max-[500px]:max-w-[328px] max-[500px]:mx-auto max-[500px]:text-[24px] text-center hidden">
+                        Сексуальное влечение понижено?</p>
+                    <p
+                        class="absolute left-0 right-0 justify-center max-w-[800px] mx-auto leading-none text-[38px] max-[500px]:max-w-[328px] max-[500px]:mx-auto max-[500px]:text-[24px] text-center hidden">
+                        Вес легко набирается и тяжело сбрасывается, особенно в области абдомена?</p>
+                    <p
+                        class="absolute left-0 right-0 justify-center max-w-[800px] mx-auto leading-none text-[38px] max-[500px]:max-w-[328px] max-[500px]:mx-auto max-[500px]:text-[24px] text-center hidden">
+                        Следишь за тем, что ешь, стараешься контролировать?</p>
+                    <p
+                        class="absolute left-0 right-0 justify-center max-w-[800px] mx-auto leading-none text-[38px] max-[500px]:max-w-[328px] max-[500px]:mx-auto max-[500px]:text-[24px] text-center hidden">
+                        Память или концентрация стали подводить?</p>
+                    <p
+                        class="absolute left-0 right-0 justify-center max-w-[800px] mx-auto leading-none text-[38px] max-[500px]:max-w-[328px] max-[500px]:mx-auto max-[500px]:text-[24px] text-center hidden">
+                        Чаще ощущаешь дискомфорты в ЖКТ?</p>
+                    <p
+                        class="absolute left-0 right-0 justify-center max-w-[800px] mx-auto leading-none text-[38px] max-[500px]:max-w-[328px] max-[500px]:mx-auto max-[500px]:text-[24px] text-center hidden">
+                        Головные боли от перенапряжения - знакомо?</p>
+                    <p
+                        class="absolute left-0 right-0 justify-center max-w-[800px] mx-auto leading-none text-[38px] max-[500px]:max-w-[328px] max-[500px]:mx-auto max-[500px]:text-[24px] text-center hidden">
+                        Иммунитет ослаблен и чаще простужаешься?</p>
+                </div>
+                <div>
+                    <div
+                        class="mx-auto mt-[76px] text-center max-[767px]:flex max-[767px]:flex-col max-[767px]:items-center max-[500px]:mt-[50px]">
+                        <button
+                            class="btn-no border-[#111111] border rounded-full w-[313px] h-[71px] text-[32px] me-[50px] max-[767px]:me-0 mb-[50px] relative z-2 max-[500px]:text-[20px] max-[500px]:max-w-[192px] max-[500px]:h-[43px] max-[500px]:mb-[35px]">Нет</button>
+                        <button
+                            class="btn-yes border-[#111111] border rounded-full w-[313px] h-[71px] text-[32px] max-[500px]:text-[20px] relative max-[500px]:max-w-[192px] max-[500px]:h-[43px]">Да</button>
+                    </div>
+                    <!-- <div class="text-center mt-[100px]">
+                        <button class="text-white btn-dalee border-[#111111] border rounded-full w-[313px] h-[71px] text-[32px] relative">Далее</button>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="result w-full h-[112px] hidden mt-[150px]" id="result">
+                <span class="result-1 hidden block absolute top-0 left-0 w-[2px] h-[400px] left-[10%]"
+                    style="background: rgb(85,85,85);background: linear-gradient(180deg, rgba(85,85,85,0.5018382352941176) 0%, rgba(85,85,85,0) 50%);"></span>
+                <span class="result-2 hidden block absolute top-0 left-0 w-[2px] h-[400px] left-[40%]"
+                    style="background: rgb(85,85,85);background: linear-gradient(180deg, rgba(85,85,85,0.5018382352941176) 0%, rgba(85,85,85,0) 50%);"></span>
+                <span class="result-3 hidden block absolute top-0 left-0 w-[2px] h-[400px] left-[80%]"
+                    style="background: rgb(85,85,85);background: linear-gradient(180deg, rgba(85,85,85,0.5018382352941176) 0%, rgba(85,85,85,0) 50%);"></span>
+            </div>
+
+            <p
+                class="result-1 hidden text-[26px] max-w-[276px] absolute leading-tight mt-[90px] left-[12%] max-[800px]:mt-[60px] max-[500px]:text-[21px]">
+                Материал курса написан лично для тебя!</p>
+            <p
+                class="result-2 hidden text-[26px] absolute max-w-[276px] leading-tight mt-[90px] left-[39%] max-[800px]:mt-[60px] max-[500px]:text-[21px]">
+                Материал курса написан лично для тебя!</p>
+            <p
+                class="result-3 hidden text-[26px] max-w-[390px] leading-tight mt-[90px] left-[61%] absolute px-[10px] max-[800px]:mt-[60px] max-[800px]:left-auto max-[800px]:right-0 max-[500px]:text-[21px]">
+                Ты отлично справляешься с окружающей суетой, но, возможно, тебе будет интересно узнать как предотвратить
+                проблемы со здоровьем в будущем!</p>
+
+            <div class="content hidden">
+                <div class="text-center mt-[300px] max-[500px]:mt-[200px]">
+                    <button
+                        class="text-white btn-dast border-[#111111] border rounded-full py-[7px] px-[78px] text-[38px] relative cursor-default max-[586px]:text-[28px] max-[500px]:text-[20px] ">Что
+                        даст этот материал?</button>
+                </div>
+                <div
+                    class="romb mx-auto mt-[100px] h-[1100px] relative max-[672px]:flex max-[672px]:flex-col  max-[672px]:items-center max-[672px]:justify-center max-[672px]:h-auto">
+                    <img class="min-[672px]:absolute max-[672px]:w-full relative max-[1536px]:right-[200px] max-[1279px]:right-[100px] max-[1023px]:right-[60px] max-[1023px]:top-[50px] max-[1023px]:w-[400px] right-[300px] max-[780px]:w-[320px]"
+                        src="/img/r1.png" alt="">
+                    <img class="min-[672px]:absolute max-[672px]:w-full relative top-[300px] max-[1536px]:left-[300px] max-[1279px]:left-[160px] max-[1023px]:left-[60px] left-[450px] max-[1023px]:w-[320px] max-[780px]:w-[260px] max-[780px]:top-[250px]"
+                        src="/img/r2.png" alt="">
+                    <img class="min-[672px]:absolute max-[672px]:w-full relative max-[1536px]:right-[200px] max-[1279px]:right-[100px] max-[1023px]:right-[50px] right-[300px] top-[480px] max-[1023px]:top-[440px] max-[1023px]:w-[400px] max-[780px]:w-[320px] max-[780px]:top-[360px]"
+                        src="/img/r3.png" alt="">
+                    <img class="min-[672px]:absolute max-[672px]:w-full relative top-[650px] max-[1536px]:left-[220px] max-[1279px]:left-[70px] max-[1023px]:left-[0px] left-[380px] max-[1023px]:w-[380px] max-[1023px]:top-[600px] max-[780px]:w-[300px] max-[780px]:top-[500px]"
+                        src="/img/r4.png" alt="">
+                </div>
+                <div class="mx-auto mt-[180px] relative">
+                    <img class="mx-auto" src="/img/bird.png" alt="bird">
+                </div>
+                <div class="mx-auto mt-[107px] relative px-[10px]">
+                    <p class="text-center text-[40px] font-bold">Early bird</p>
+                    <p
+                        class="text-center text-[40px] max-w-[628px] leading-none mx-auto mt-[30px] max-[500px]:text-[28px]">
+                        Для всех, кто регистрируется до 1 декабря, стоимость курса меньше, чем для тех, кто
+                        регистрируется после 1 декабря</p>
+                    <button onclick="window.location.href = 'https://courses.katiatxi.club/course/21'"
+                        class="mt-[107px] block mx-auto text-white btn-reg border-[#111111] border rounded-full py-[7px] px-[78px] text-[38px] relative max-[586px]:text-[28px] max-[500px]:text-[20px]">Регистрация
+                        и оплата</button>
+                </div>
+            </div>
+
+
+            <div class="mx-auto logo mt-[97px]">
+                <img src="/img/logo.svg" alt="logo">
             </div>
         </div>
+    </div>
 
-        <div class="result w-full h-[112px] hidden mt-[150px]" id="result">
-            <span class="result-1 hidden block absolute top-0 left-0 w-[2px] h-[400px] left-[10%]" style="background: rgb(85,85,85);background: linear-gradient(180deg, rgba(85,85,85,0.5018382352941176) 0%, rgba(85,85,85,0) 50%);"></span>
-            <span class="result-2 hidden block absolute top-0 left-0 w-[2px] h-[400px] left-[40%]" style="background: rgb(85,85,85);background: linear-gradient(180deg, rgba(85,85,85,0.5018382352941176) 0%, rgba(85,85,85,0) 50%);"></span>
-            <span class="result-3 hidden block absolute top-0 left-0 w-[2px] h-[400px] left-[80%]" style="background: rgb(85,85,85);background: linear-gradient(180deg, rgba(85,85,85,0.5018382352941176) 0%, rgba(85,85,85,0) 50%);"></span>
-        </div>
-        
-        <p class="result-1 hidden text-[26px] max-w-[276px] absolute leading-tight mt-[90px] left-[12%] max-[800px]:mt-[60px] max-[500px]:text-[21px]">Материал курса написан лично для тебя!</p>
-        <p class="result-2 hidden text-[26px] absolute max-w-[276px] leading-tight mt-[90px] left-[39%] max-[800px]:mt-[60px] max-[500px]:text-[21px]">Материал курса написан лично для тебя!</p>
-        <p class="result-3 hidden text-[26px] max-w-[390px] leading-tight mt-[90px] left-[61%] absolute px-[10px] max-[800px]:mt-[60px] max-[800px]:left-auto max-[800px]:right-0 max-[500px]:text-[21px]">Ты отлично справляешься с окружающей суетой, но, возможно, тебе будет интересно узнать как предотвратить проблемы со здоровьем в будущем!</p>
-
-        <div class="content hidden">
-            <div class="text-center mt-[300px] max-[500px]:mt-[200px]">
-                <button class="text-white btn-dast border-[#111111] border rounded-full py-[7px] px-[78px] text-[38px] relative cursor-default max-[586px]:text-[28px] max-[500px]:text-[20px] ">Что даст этот материал?</button>
-            </div>
-            <div class="romb mx-auto mt-[100px] h-[1100px] relative max-[672px]:flex max-[672px]:flex-col  max-[672px]:items-center max-[672px]:justify-center max-[672px]:h-auto">
-                <img class="min-[672px]:absolute max-[672px]:w-full relative max-[1536px]:right-[200px] max-[1279px]:right-[100px] max-[1023px]:right-[60px] max-[1023px]:top-[50px] max-[1023px]:w-[400px] right-[300px] max-[780px]:w-[320px]" src="/img/r1.png" alt="">
-                <img class="min-[672px]:absolute max-[672px]:w-full relative top-[300px] max-[1536px]:left-[300px] max-[1279px]:left-[160px] max-[1023px]:left-[60px] left-[450px] max-[1023px]:w-[320px] max-[780px]:w-[260px] max-[780px]:top-[250px]" src="/img/r2.png" alt="">
-                <img class="min-[672px]:absolute max-[672px]:w-full relative max-[1536px]:right-[200px] max-[1279px]:right-[100px] max-[1023px]:right-[50px] right-[300px] top-[480px] max-[1023px]:top-[440px] max-[1023px]:w-[400px] max-[780px]:w-[320px] max-[780px]:top-[360px]" src="/img/r3.png" alt="">
-                <img class="min-[672px]:absolute max-[672px]:w-full relative top-[650px] max-[1536px]:left-[220px] max-[1279px]:left-[70px] max-[1023px]:left-[0px] left-[380px] max-[1023px]:w-[380px] max-[1023px]:top-[600px] max-[780px]:w-[300px] max-[780px]:top-[500px]" src="/img/r4.png" alt="">
-            </div>
-            <div class="mx-auto mt-[180px] relative">
-                <img class="mx-auto" src="/img/bird.png" alt="bird">
-            </div>
-            <div class="mx-auto mt-[107px] relative px-[10px]">
-                <p class="text-center text-[40px] font-bold">Early bird</p>
-                <p class="text-center text-[40px] max-w-[628px] leading-none mx-auto mt-[30px] max-[500px]:text-[28px]">Для всех, кто регистрируется до 1 декабря, стоимость курса меньше, чем для тех, кто регистрируется после 1 декабря</p>
-                <button onclick="window.location.href = 'https://courses.katiatxi.club/course/21'" class="mt-[107px] block mx-auto text-white btn-reg border-[#111111] border rounded-full py-[7px] px-[78px] text-[38px] relative max-[586px]:text-[28px] max-[500px]:text-[20px]">Регистрация и оплата</button>
-            </div>
-        </div>
-
-
-        <img class="mx-auto mt-[97px]" src="/img/logo.svg" alt="logo">
+    <div class="overlay desctop">
+        <img src="/img/overlay.png" alt="">
     </div>
 </body>
 
 </html>
-
