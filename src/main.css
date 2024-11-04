@@ -1,0 +1,97 @@
+body {
+    background: url(/img/back_full.png) center no-repeat;
+    background-size: cover;
+}
+
+img {
+  display: block;
+  /* width: 100%; */
+  height: 100%;
+  object-fit: cover;
+}
+@media (min-width: 501px) {
+    .modile {
+        display: none;
+    }
+    .desctop {
+        display: block;
+    }
+}
+@media (max-width: 500px) {
+    .desctop {
+        display: none;
+    }
+    .modile {
+        display: block;
+    }
+}
+#result {
+    scroll-margin-top: 120px; /* Обеспечиваем превосходный обзор */
+}
+.result{
+    background: rgb(218,0,0);
+    background: linear-gradient(90deg, rgba(218,0,0,1) 0%, rgba(255,187,0,1) 50%, rgba(121,195,0,1) 100%);
+    position: relative;
+    
+}
+.result::after{
+    content: "";
+    position: absolute;
+    width: 98.5%;
+    height: 100%;
+    border: 1px solid black;
+    transform: rotate(-1deg);
+    left: 9px;
+}
+.btn-no::before, .btn-yes::before, .btn-dalee::before {
+    content: "";
+    background-color: #ffa00091;
+    position: absolute;
+    top: -4px;
+    left: 4px;
+    width: 313px;
+    height: 82px;
+    border-radius: 100px;
+    z-index: -1;
+    transition-duration: 300ms;
+}
+.btn-yes::before {
+    background-color: #76a919a1;
+    left: -6px;
+}
+.btn-dalee::before{
+    background-color: black;
+    left: -6px;
+}
+.btn-no:hover:before{
+    background-color: #ffa200;
+}
+.btn-yes:hover:before{
+    background-color: #77a919;
+}
+.btn-dast::before, .btn-reg::before{
+    content: "";
+    background-color: #000000;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 102%;
+    height: 100%;
+    border-radius: 100px;
+    z-index: -1;
+    transition-duration: 300ms;
+    transform: rotate(2deg);
+}
+
+.btn-reg::before{
+    transform: rotate(1deg);
+    left: 15px;
+    top: 4px;
+}
+@media (max-width: 672px) {
+    .romb > img{
+        left: unset;
+        right: unset;
+        top: unset;
+    }
+}

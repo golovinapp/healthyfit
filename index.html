@@ -1,20 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Принципы здорового</title>
-    <link rel="stylesheet" href="/fonts/fonts.css" />
-
+    <link rel="stylesheet" href="/fonts/fonts.css"/>
+    <link rel="stylesheet" href="/src/main.css">
+    <script defer src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script defer src="/src/main.js"></script>
 </head>
 <body class="bg-[#FFFAF1] py-[50px] px-[20px]" style="font-family: Waverly">
     <!-- <img class="vector-body absolute left-0 top-0 z-[-1]" src="/img/vector.png" alt="vector"> -->
     <div class="container mx-auto">
         <img class="mx-auto" src="/img/logo.svg" alt="logo"> 
-        <p  style="font-family: PF Bague Sans Pro" class="mt-[156px] text-[26px] text-center font-light uppercase max-[500px]:mt-[56px]">Курс Кати <span class="ms-[3px]">Чи</span></p> 
-        <img class="mx-auto mt-[76px] max-w-[822px] w-full" src="/img/title.png" alt="title">
-        <div class="check max-w-[400px] mx-auto mt-[267px] text-[48px] uppercase font-light leading-tight max-[500px]:text-[32px] max-[500px]:text-center max-[500px]:mt-[100px]">
-            Давай проверим — подойдет ли тебе этот материал?
+        <p  style="font-family: PF Bague Sans Pro" class="mt-[156px] text-[26px] text-center font-light uppercase max-[500px]:mt-[182px]">Курс Кати <span class="ms-[3px]">Чи</span></p>
+        <div class="mx-auto mt-[76px] max-w-[822px] w-full desctop">
+            <img  src="/img/title.png" alt="title">
+        </div>
+        <div class="mx-auto mt-[17px] max-w-[822px] w-full mobile">
+            <img  src="/img/title_mob.png" alt="title">
+        </div>
+        <div class="check max-w-[400px] mx-auto mt-[267px] text-[48px] uppercase font-light leading-tight desctop">
+            Давай проверим — подойдет ли тебе этот материал?
+            <img class="ms-auto me-[20px]" src="/img/vec.svg" alt="vec">
+        </div>
+        <div class="check max-w-[400px] mx-auto mt-[178px] text-[24px] uppercase font-light leading-tight text-center mobile">
+            Давай проверим — подойдет ли тебе этот материал?
             <img class="ms-auto me-[20px]" src="/img/vec.svg" alt="vec">
         </div>
 
@@ -80,185 +92,7 @@
 
         <img class="mx-auto mt-[97px]" src="/img/logo.svg" alt="logo">
     </div>
-
-    <script>
-        // let body = document.querySelector('body .container');
-        // let vec = document.querySelector('.vector-body');
-        // h = body.offsetHeight;
-        // vec.style.height = `${h}px`;
-
-        const btnNo = document.querySelector(".btn-no");
-        const btnYes = document.querySelector(".btn-yes");
-        const btnDalee = document.querySelector(".btn-dalee");
-        const btnDast = document.querySelector(".btn-dast");
-        const btnReg = document.querySelector(".btn-reg");
-        const content = document.querySelector(".content");
-        const opros = document.querySelector(".opros");
-        const blockOpros = document.querySelectorAll(".block-opros > p");
-        let x = 0;
-        let yes = 0;
-        let no = 0;
-
-        btnNo.addEventListener('click', () => {
-            clickBtn();
-            no++;
-        });
-
-        btnYes.addEventListener('click', () => {
-            clickBtn();
-            yes++;
-        });
-
-        function clickBtn(){
-            fadeOut(blockOpros[x], 1000, 'flex');
-            x++;
-            if(blockOpros[x]){
-                fadeIn(blockOpros[x], 1000, 'flex');
-            } else {
-                fadeIn(content, 1000, 'block');
-                opros.classList.add('hidden');
-                document.querySelector('.check').classList.add('hidden');
-                opros
-                console.log(yes);
-                console.log(no);
-                document.querySelector('.result').classList.remove('hidden');
-                if(yes >= 6){
-                    document.querySelector('.result .result-1').classList.remove('hidden');
-                    document.querySelector('p.result-1').classList.remove('hidden');
-                } else if(yes > 3 && yes < 6){
-                    document.querySelector('.result .result-2').classList.remove('hidden');
-                    document.querySelector('p.result-2').classList.remove('hidden');
-                } else {
-                    document.querySelector('.result .result-3').classList.remove('hidden');
-                    document.querySelector('p.result-3').classList.remove('hidden');
-                }
-                // h = body.offsetHeight;
-                // vec.style.height = `${h}px`;
-                window.location = '#result';
-            }
-        }
-
-        const fadeIn = (el, timeout, display) => {
-            el.style.opacity = 0;
-            el.style.display = display || 'block';
-            el.style.transition = `opacity ${timeout}ms`;
-            setTimeout(() => {
-                el.style.opacity = 1;
-            }, 10);
-        };
-
-        const fadeOut = (el, timeout) => {
-            el.style.opacity = 1;
-            el.style.transition = `opacity ${timeout}ms`;
-            el.style.opacity = 0;
-
-            setTimeout(() => {
-                el.style.display = 'none';
-            }, timeout);
-        };
-
-        // function fadeOut(el){
-        //     let opacity = 1;
-        //     let timer = setInterval(function() {
-        //         if(opacity <= 0.1) {
-        //             clearInterval(timer);
-        //             el.classList.add("hidden");
-        //         }
-        //         el.style.opacity = opacity;
-        //         opacity -= opacity * 0.1;
-        //     }, 10);
-        // }
-        // function fadeIn(el) {
-        //     let opacity = 0.01;
-        //     el.classList.remove("hidden");
-        //     let timer = setInterval(function() {
-        //         if(opacity >= 1) {
-        //             clearInterval(timer);
-        //         }
-        //         el.style.opacity = opacity;
-        //         opacity += opacity * 0.1;
-        //     }, 10);
-        // }
-    </script>
-
-    <style>
-        #result {
-            scroll-margin-top: 120px; /* Обеспечиваем превосходный обзор */
-        }
-        .result{
-            background: rgb(218,0,0);
-            background: linear-gradient(90deg, rgba(218,0,0,1) 0%, rgba(255,187,0,1) 50%, rgba(121,195,0,1) 100%);
-            position: relative;
-            
-        }
-        .result::after{
-            content: "";
-            position: absolute;
-            width: 98.5%;
-            height: 100%;
-            border: 1px solid black;
-            transform: rotate(-1deg);
-            left: 9px;
-        }
-        .btn-no::before, .btn-yes::before, .btn-dalee::before {
-            content: "";
-            background-color: #ffa00091;
-            position: absolute;
-            top: -4px;
-            left: 4px;
-            width: 313px;
-            height: 82px;
-            border-radius: 100px;
-            z-index: -1;
-            transition-duration: 300ms;
-        }
-        .btn-yes::before {
-            background-color: #76a919a1;
-            left: -6px;
-        }
-        .btn-dalee::before{
-            background-color: black;
-            left: -6px;
-        }
-        .btn-no:hover:before{
-            background-color: #ffa200;
-        }
-        .btn-yes:hover:before{
-            background-color: #77a919;
-        }
-        .btn-dast::before, .btn-reg::before{
-            content: "";
-            background-color: #000000;
-            position: absolute;
-            top: 7px;
-            left: 0;
-            width: 102%;
-            height: 100%;
-            border-radius: 100px;
-            z-index: -1;
-            transition-duration: 300ms;
-            transform: rotate(2deg);
-        }
-
-        .btn-reg::before{
-            transform: rotate(1deg);
-            left: 15px;
-            top: 4px;
-        }
-        @media (max-width: 672px) {
-            .romb > img{
-                left: unset;
-                right: unset;
-                top: unset;
-            }
-        }
-        
-
-    </style>
-    
-    
 </body>
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
 </html>
 
