@@ -54,9 +54,11 @@ svg {
 #result {
     scroll-margin-top: 120px;
     /* Обеспечиваем превосходный обзор */
+
 }
 
 .result {
+    width: calc(100% - 30px);
     background: rgb(218, 0, 0);
     background: linear-gradient(90deg, rgba(218, 0, 0, 1) 0%, rgba(255, 187, 0, 1) 50%, rgba(121, 195, 0, 1) 100%);
     position: relative;
@@ -70,7 +72,7 @@ svg {
     height: 100%;
     border: 1px solid black;
     transform: rotate(-1deg);
-    left: 9px;
+    left: 2px;
 }
 
 .btn-no::before,
@@ -122,27 +124,25 @@ svg {
     content: "";
     background-color: #000000;
     position: absolute;
-    top: 7px;
+    top: 3px;
     left: 0;
     width: 102%;
     height: 100%;
     border-radius: 100px;
     z-index: -1;
     transition-duration: 300ms;
-    transform: rotate(2deg);
+    transform: rotate(1deg);
 }
 
 .btn-reg::before {
     transform: rotate(1deg);
-    left: 15px;
-    top: 4px;
+    left: 7px;
+    top: 2px;
 }
 
 @media (max-width: 672px) {
     .romb>img {
         left: unset;
-        right: unset;
-        top: unset;
     }
 }
 

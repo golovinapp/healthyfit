@@ -23,20 +23,20 @@
                     <img src="/img/logo.svg" alt="logo">
                 </div>
                 <p style="font-family: PF Bague Sans Pro"
-                    class="mt-[156px] text-[26px] text-center font-light uppercase max-[500px]:mt-[182px] max-[500px]:text-[20px]">
+                    class="mt-[156px] text-[26px] text-center font-light uppercase max-[500px]:mt-[150px] max-[500px]:text-[20px]">
                     Курс Кати <span class="ms-[3px]">Чи</span></p>
                 <div class="mx-auto mt-[76px] max-w-[822px] w-full desctop">
                     <img src="/img/title.png" alt="title">
                 </div>
-                <div class="mx-auto mt-[17px] max-w-[300px] w-full mobile">
-                    <img src="/img/title_mob.png" alt="title">
+                <div class="mx-auto -mt-[5px] max-w-[300px] w-full mobile">
+                    <img class="relative -top-[22px]" src="/img/title_mob1.svg" alt="title">
                 </div>
-                <div class="check max-w-[400px] mx-auto mt-[267px] text-[48px] uppercase font-light leading-tight desctop">
+                <div class="check max-w-[400px] mx-auto mt-[20px] text-[48px] uppercase font-light leading-tight desctop text-[#555555]">
                     Давай проверим — подойдет ли тебе этот материал?
                     <img class="ms-auto me-[20px]" src="/img/vec.svg" alt="vec">
                 </div>
                 <div
-                    class="check max-w-[200px] mx-auto mt-[178px] text-[24px] uppercase font-light leading-tight text-center mobile lh110p">
+                    class="check max-w-[200px] mx-auto mt-[0px] text-[24px] uppercase font-light leading-tight text-center mobile lh110p">
                     <p>
                         Давай проверим —
                     </p>
@@ -51,12 +51,12 @@
     
                 <div class="arrow mt-[37px] mx-auto mobile">
                     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="40" viewBox="0 0 26 40" fill="none">
-                        <path d="M0 28.5L11 36V2L14 0V36L26 28.5V31L12.5 40L0 31V28.5Z" fill="black" />
+                        <path d="M0 28.5L11 36V2L14 0V36L26 28.5V31L12.5 40L0 31V28.5Z" fill="black"/>
                     </svg>
                 </div>
 
                 <div class="abs mobile">
-                    <img src="/img/string1_mob.png" alt="">
+                    <img style="z-index: -2;width: unset; max-width: unset;" class="-left-[0] absolute -top-[0]" src="/img/left-vektor2.svg" alt="">
                 </div>
             </div>
 
@@ -67,7 +67,7 @@
                     Что думаешь об этих утверждениях?
                 </div>
                 <div
-                    class="block-opros mt-[97px] h-[50px] max-[600px]:h-[90px] max-[500px]:h-[120px] max-[500px]:h-[90px] text-center relative mx-auto">
+                    class="block-opros mt-[135px] h-[50px] max-[600px]:h-[90px] max-[500px]:h-[120px] max-[500px]:h-[90px] text-center relative mx-auto">
                     <p
                         class="absolute left-0 right-0 justify-center max-w-[800px] mx-auto leading-none text-[38px] max-[500px]:max-w-[328px] max-[500px]:mx-auto max-[500px]:text-[24px] text-center">
                         Cталкиваешься ли ты со стрессом?</p>
@@ -102,68 +102,106 @@
                         class="absolute left-0 right-0 justify-center max-w-[800px] mx-auto leading-none text-[38px] max-[500px]:max-w-[328px] max-[500px]:mx-auto max-[500px]:text-[24px] text-center hidden">
                         Иммунитет ослаблен и чаще простужаешься?</p>
                 </div>
-                <div>
+                <div class="yes-no">
                     <div
                         class="mx-auto mt-[76px] text-center max-[767px]:flex max-[767px]:flex-col max-[767px]:items-center max-[500px]:mt-[50px]">
                         <button
                             class="btn-no border-[#111111] border rounded-full w-[313px] h-[71px] text-[32px] me-[50px] max-[767px]:me-0 mb-[50px] relative z-2 max-[500px]:text-[20px] max-[500px]:max-w-[192px] max-[500px]:h-[43px] max-[500px]:mb-[35px]">Нет</button>
                         <button
                             class="btn-yes border-[#111111] border rounded-full w-[313px] h-[71px] text-[32px] max-[500px]:text-[20px] relative max-[500px]:max-w-[192px] max-[500px]:h-[43px]">Да</button>
+                            <!-- <a class="btn-dalee hidden" href="#"></a> -->
                     </div>
                     <!-- <div class="text-center mt-[100px]">
                         <button class="text-white btn-dalee border-[#111111] border rounded-full w-[313px] h-[71px] text-[32px] relative">Далее</button>
                     </div> -->
                 </div>
             </div>
-
-            <div class="result w-full h-[112px] hidden mt-[150px]" id="result">
-                <span class="result-1 hidden block absolute top-0 left-0 w-[2px] h-[400px] left-[10%]"
-                    style="background: rgb(85,85,85);background: linear-gradient(180deg, rgba(85,85,85,0.5018382352941176) 0%, rgba(85,85,85,0) 50%);"></span>
-                <span class="result-2 hidden block absolute top-0 left-0 w-[2px] h-[400px] left-[40%]"
-                    style="background: rgb(85,85,85);background: linear-gradient(180deg, rgba(85,85,85,0.5018382352941176) 0%, rgba(85,85,85,0) 50%);"></span>
-                <span class="result-3 hidden block absolute top-0 left-0 w-[2px] h-[400px] left-[80%]"
-                    style="background: rgb(85,85,85);background: linear-gradient(180deg, rgba(85,85,85,0.5018382352941176) 0%, rgba(85,85,85,0) 50%);"></span>
+            <div id="result">
+                <div class="check-box hidden">
+                    <img class="w-[277px] mx-auto mt-[60px]" src="./img/ok.svg" alt="">
+                </div>
+                <div class="result mx-auto h-[32px] hidden mt-[30px]">
+                    <span class="result-3 hidden block absolute top-0 left-0 w-[2px] h-[124px] left-[80%]"
+                        style="background: rgb(85,85,85);background: linear-gradient(180deg, rgba(85,85,85,0.5018382352941176) 0%, rgba(85,85,85,0) 50%);"></span>
+                    <span class="result-2 hidden block absolute top-0 left-0 w-[2px] h-[124px] left-[40%]"
+                        style="background: rgb(85,85,85);background: linear-gradient(180deg, rgba(85,85,85,0.5018382352941176) 0%, rgba(85,85,85,0) 50%);"></span>
+                    <span class="result-1 hidden block absolute top-0 left-0 w-[2px] h-[124px] left-[12%]"
+                        style="background: rgb(85,85,85);background: linear-gradient(180deg, rgba(85,85,85,0.5018382352941176) 0%, rgba(85,85,85,0) 50%);"></span>
+                </div>
             </div>
 
-            <p
-                class="result-1 hidden text-[26px] max-w-[276px] absolute leading-tight mt-[90px] left-[12%] max-[800px]:mt-[60px] max-[500px]:text-[21px]">
+
+            <p  
+                style="text-align: center;"
+                class="result-1 hidden text-[26px] max-w-[285px] leading-tight mt-[90px] mx-auto max-[800px]:mt-[32px] max-[500px]:text-[18px]">
                 Материал курса написан лично для тебя!</p>
             <p
-                class="result-2 hidden text-[26px] absolute max-w-[276px] leading-tight mt-[90px] left-[39%] max-[800px]:mt-[60px] max-[500px]:text-[21px]">
+                style="text-align: center;"
+                class="result-2 hidden text-[26px] max-w-[276px] leading-tight mt-[90px] mx-auto max-[800px]:mt-[60px] max-[500px]:text-[21px]">
                 Материал курса написан лично для тебя!</p>
             <p
-                class="result-3 hidden text-[26px] max-w-[390px] leading-tight mt-[90px] left-[61%] absolute px-[10px] max-[800px]:mt-[60px] max-[800px]:left-auto max-[800px]:right-0 max-[500px]:text-[21px]">
+                style="text-align: center;"
+                class="result-3 hidden text-[26px] max-w-[390px] leading-tight mt-[90px] mx-auto px-[10px] max-[800px]:mt-[60px] max-[800px]:left-auto max-[800px]:right-0 max-[500px]:text-[21px]">
                 Ты отлично справляешься с окружающей суетой, но, возможно, тебе будет интересно узнать как предотвратить
                 проблемы со здоровьем в будущем!</p>
+            
+            <div class="hidden max-[500px]:block">
+                <img style="max-width: unset;width: unset;" class="mx-auto arrow-bottom mt-[43px] hidden" src="./img/arrow-bottom.svg" alt="">
+            </div>
+            <div class="hidden max-[500px]:block">
+                <img style="max-width: unset;z-index: -20;" class="middle-vektor hidden w-[447px] relative -left-[15px] -top-[38px]" src="./img/middle-vektor.svg" alt="">
+            </div>
 
             <div class="content hidden">
-                <div class="text-center mt-[300px] max-[500px]:mt-[200px]">
+                <div class="text-center mt-[300px] max-[500px]:mt-[120px]">
                     <button
-                        class="text-white btn-dast border-[#111111] border rounded-full py-[7px] px-[78px] text-[38px] relative cursor-default max-[586px]:text-[28px] max-[500px]:text-[20px] ">Что
+                        class="text-white w-[271px] mx-auto btn-dast border-[#111111] border rounded-full py-[7px] px-[39px] text-[38px] relative cursor-default max-[586px]:text-[28px] max-[500px]:text-[19px] ">Что
                         даст этот материал?</button>
                 </div>
                 <div
-                    class="romb mx-auto mt-[100px] h-[1100px] relative max-[672px]:flex max-[672px]:flex-col  max-[672px]:items-center max-[672px]:justify-center max-[672px]:h-auto">
-                    <img class="min-[672px]:absolute max-[672px]:w-full relative max-[1536px]:right-[200px] max-[1279px]:right-[100px] max-[1023px]:right-[60px] max-[1023px]:top-[50px] max-[1023px]:w-[400px] right-[300px] max-[780px]:w-[320px]"
-                        src="/img/r1.png" alt="">
-                    <img class="min-[672px]:absolute max-[672px]:w-full relative top-[300px] max-[1536px]:left-[300px] max-[1279px]:left-[160px] max-[1023px]:left-[60px] left-[450px] max-[1023px]:w-[320px] max-[780px]:w-[260px] max-[780px]:top-[250px]"
-                        src="/img/r2.png" alt="">
-                    <img class="min-[672px]:absolute max-[672px]:w-full relative max-[1536px]:right-[200px] max-[1279px]:right-[100px] max-[1023px]:right-[50px] right-[300px] top-[480px] max-[1023px]:top-[440px] max-[1023px]:w-[400px] max-[780px]:w-[320px] max-[780px]:top-[360px]"
-                        src="/img/r3.png" alt="">
-                    <img class="min-[672px]:absolute max-[672px]:w-full relative top-[650px] max-[1536px]:left-[220px] max-[1279px]:left-[70px] max-[1023px]:left-[0px] left-[380px] max-[1023px]:w-[380px] max-[1023px]:top-[600px] max-[780px]:w-[300px] max-[780px]:top-[500px]"
-                        src="/img/r4.png" alt="">
+                    class="romb mx-auto mt-[100px] h-[1100px] relative max-[672px]:flex max-[672px]:flex-col  max-[672px]:items-center max-[672px]:justify-center max-[672px]:h-auto w-[95%] mx-auto">
+                    <div class="romb-img relative w-[222px] left-[75px]">
+                        <img src="./img/romb-bg1.svg" class="romb-bg w-[222px] absolute top-0 left-0" alt="">
+                        <img src="./img/romb-border1.svg" class="romb-border w-[216px] absolute -top-[2px] left-[2px]" alt="">
+                        <p class="romb-text absolute z-10 text-center text-[12px] font-medium left-[50%] top-[55px] translate-x-[-50%] w-[158px]">
+                            Подробный разбор гормональных каскадов нашего организма, участвующих в управлении реакциями на стресс
+                        </p>
+                    </div>                    
+                    <div class="romb-img relative w-[165px] mt-[122px] right-[80px]">
+                        <img src="./img/romb-bg2.svg" class="romb-bg w-[165px] absolute top-0 left-0" alt="">
+                        <img src="./img/romb-border2.svg" class="romb-border w-[160px] absolute top-[1px] -left-[2px]" alt="">
+                        <p class="romb-text text-white absolute z-10 text-center text-[12px] font-medium left-[50%] top-[42px] translate-x-[-50%] w-[130px]">
+                            ключики к <br>работе с лишним весом за рамками физкультуры и питания
+                        </p>
+                    </div>
+                    <div class="romb-img relative w-[210px] left-[80px] mt-[84px]">
+                        <img src="./img/romb-bg3.svg" class="romb-bg w-[210px] absolute top-0 left-0" alt="">
+                        <img src="./img/romb-border3.svg" class="romb-border w-[210px] absolute top-[0px] -left-[8px]" alt="">
+                        <p class="romb-text absolute z-10 text-center text-[12px] font-medium left-[50%] top-[40px] translate-x-[-50%] w-[122px]">
+                            БАДы и продукты питания, помогающие активировать механизмы тела по восстановлению подтянутой фигуры без лишнего веса
+                        </p>
+                    </div>        
+                    <div class="romb-img relative w-[195px] mt-[108px] -left-[85px]">
+                        <img src="./img/romb-bg4.svg" class="romb-bg w-[194px] absolute top-0 left-0" alt="">
+                        <img src="./img/romb-border4.svg" class="romb-border w-[195px] absolute top-[5px] left-[6px]" alt="">
+                        <p class="romb-text absolute z-10 text-center text-[12px] font-medium left-[50%] top-[42px] translate-x-[-50%] w-[130px]">
+                            простые <br>и доступные рекомендации по физическим нагрузкам для здоровой формы тела
+                        </p>
+                    </div> 
                 </div>
-                <div class="mx-auto mt-[180px] relative">
-                    <img class="mx-auto" src="/img/bird.png" alt="bird">
+                <div class="hidden max-[500px]:block">
+                    <img style="max-width: unset;width: unset;" class="mx-auto arrow-bottom mt-[230px] hidden" src="./img/arrow-bottom.svg" alt="">
                 </div>
-                <div class="mx-auto mt-[107px] relative px-[10px]">
-                    <p class="text-center text-[40px] font-bold">Early bird</p>
+                <div class="mx-auto mt-[185px] relative">
+                    <img class="mx-auto w-[84%]" src="/img/galkas.svg" alt="bird">
+                </div>
+                <div class="mx-auto mt-[40px] relative px-[10px]">
+                    <p class="text-center text-[40px] max-[600px]:text-[24px] font-bold text-[#555]">Early bird</p>
                     <p
-                        class="text-center text-[40px] max-w-[628px] leading-none mx-auto mt-[30px] max-[500px]:text-[28px]">
-                        Для всех, кто регистрируется до 1 декабря, стоимость курса меньше, чем для тех, кто
-                        регистрируется после 1 декабря</p>
+                        class="text-center text-[40px] max-w-[628px] leading-none mx-auto mt-[30px] max-[500px]:text-[24px] max-[500px]:max-w-[307px] text-[#555]">
+                        Для всех, кто регистрируется до 1 декабря, стоимость курса меньше, чем для тех, <br>кто присоединится позже</p>
                     <button onclick="window.location.href = 'https://courses.katiatxi.club/course/21'"
-                        class="mt-[107px] block mx-auto text-white btn-reg border-[#111111] border rounded-full py-[7px] px-[78px] text-[38px] relative max-[586px]:text-[28px] max-[500px]:text-[20px]">Регистрация
+                        class="mt-[57px] block mx-auto text-white btn-reg border-[#111111] border rounded-full py-[7px] px-[40px] text-[38px] relative max-[586px]:text-[28px] max-[500px]:text-[20px] w-[285px]">Регистрация
                         и оплата</button>
                 </div>
             </div>
@@ -176,7 +214,7 @@
     </div>
 
     <div class="overlay desctop">
-        <img src="/img/overlay.png" alt="">
+        <img src="/img/overlay1.png" alt="">
     </div>
 </body>
 
