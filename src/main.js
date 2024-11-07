@@ -2,6 +2,15 @@
 // let vec = document.querySelector('.vector-body');
 // h = body.offsetHeight;
 // vec.style.height = `${h}px`;
+document.querySelector('html').classList.add('loaded');
+window.addEventListener('load', function () {
+  var preloader = document.getElementById('preloader');
+
+  document.querySelector('html').classList.remove('loaded');
+  preloader.style.display = 'none';
+});
+
+
 
 const btnNo = document.querySelector(".btn-no");
 const btnYes = document.querySelector(".btn-yes");
